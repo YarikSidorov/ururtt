@@ -1,0 +1,42 @@
+﻿<Page x:Class="ururtt.Spisok1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ururtt"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Салон красоты" Height="450" Width="800">
+    <Grid Background="#F16C97">
+        <Border MinWidth="550" Margin="50" Background="White" VerticalAlignment="Center" Padding="30" MaxHeight="400" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="40" Color="LightGray" ShadowDepth="0"></DropShadowEffect>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Список процедур" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"></TextBlock>
+
+                <Grid Margin="0 0 0 20">
+                    <Label HorizontalAlignment="Left"  Content="Стрижка-Укладка" Style="{StaticResource MaterialDesignLabel}"></Label>
+                    <Label HorizontalAlignment="Center"  Content="Маникюр-Педикюр" Style="{StaticResource MaterialDesignLabel}"></Label>
+                    <Label HorizontalAlignment="Right"  Content="Брови-Ресницы" Style="{StaticResource MaterialDesignLabel}"></Label>
+                </Grid>
+
+                <Grid Margin="0 20 0 20">
+                    <Label HorizontalAlignment="Center"  Content="Макияж-Визаж" Style="{StaticResource MaterialDesignLabel}"></Label>
+                    <Label HorizontalAlignment="Right"  Content="Врачебная косметология" Style="{StaticResource MaterialDesignLabel}"></Label>
+                    <Label HorizontalAlignment="Left"  Content="Аппаратная косметология" Style="{StaticResource MaterialDesignLabel}"></Label>
+                </Grid>
+                <Grid Margin="0 0 0 20">
+                    <Label HorizontalAlignment="Left"  Content="Массаж-СПА" Style="{StaticResource MaterialDesignLabel}"></Label>
+                    <Label HorizontalAlignment="Center"  Content="Солярий" Style="{StaticResource MaterialDesignLabel}"></Label>
+                    <Label HorizontalAlignment="Right"  Content="Удаление волос" Style="{StaticResource MaterialDesignLabel}"></Label>
+                </Grid>
+
+                <Grid>
+                    <Button HorizontalAlignment="Right" Click="Button_Click1" Content="Назад"></Button>
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
